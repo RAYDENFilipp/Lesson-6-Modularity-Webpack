@@ -8,20 +8,23 @@ module.exports = {
 		path: __dirname + "/dist",
 		filename: "bundle.js"
 	},
-	module:{
-		rules: [
-			{
+	module: {
+		rules: [{
 				test: /\.css$/,
-				use: [ 'style-loader', 'css-loader' ]
+				use: ['style-loader', 'css-loader']
+			},
+			{
+				test: /\.scss$/,
+				use: ['style-loader', 'sass-loader']
 			},
 			{
 				test: /\.js$/,
 				exclude: /(node_modules)/,
 				use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['env']
-                    }
+					loader: 'babel-loader',
+					options: {
+						presets: ['env']
+					}
 				}
 			}
 		]
@@ -33,7 +36,7 @@ module.exports = {
 		}
 	})],
 	devServer: {
-		inline:true,
+		inline: true,
 		port: 8081
 	}
 }
