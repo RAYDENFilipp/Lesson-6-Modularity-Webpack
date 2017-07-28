@@ -1,5 +1,6 @@
 var userList = require('./userList.js');
 require('../css/style.css');
+require('../css/style_2.scss');
 
 const users = [
     { name: 'Oksana', age: 22 }, 
