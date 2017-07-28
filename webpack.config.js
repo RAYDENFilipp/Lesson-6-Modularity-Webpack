@@ -19,13 +19,19 @@ module.exports = {
 			},
 			{
 				test: /\.js$/,
+				enforce: 'pre',
 				exclude: /(node_modules)/,
-				use: {
+				use: [
+					{
 					loader: 'babel-loader',
 					options: {
 						presets: ['env']
 					}
+				},
+				{
+					loader: 'jshint-loader'
 				}
+			]
 			}
 		]
 	},

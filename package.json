@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap-css": "^4.0.0-alpha.5",
+    "jshint-loader": "^0.8.4",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
