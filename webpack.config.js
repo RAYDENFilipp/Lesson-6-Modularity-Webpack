@@ -67,7 +67,8 @@ module.exports = {
 		minimize: true,
 		compress: {
 			warnings: false
-		}
+		},
+		extractComments: true
 	})],
 	devServer: {
 		inline: true,
