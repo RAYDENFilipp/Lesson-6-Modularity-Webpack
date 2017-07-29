@@ -1,11 +1,11 @@
 module.exports = [
-  '../avatars/1',
-  '../avatars/2',
-  '../avatars/3',
-  '../avatars/4',
-  '../avatars/5',
-  '../avatars/6',
-  '../avatars/7',
-  '../avatars/8',
-  '../avatars/9',
-]
+  './src/avatars/1.png',
+  './src/avatars/2.png',
+  './src/avatars/3.png',
+  './src/avatars/4.png',
+  './src/avatars/5.png',
+  './src/avatars/6.png',
+  './src/avatars/7.png',
+  './src/avatars/8.png',
+  './src/avatars/9.png',
+];
