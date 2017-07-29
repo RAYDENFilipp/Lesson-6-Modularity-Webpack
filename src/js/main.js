@@ -1,10 +1,16 @@
 /*jshint esversion: 6*/
 // var userList = require('./userList.js');
-import {userList} from './userList.js';
+
+import 'jshint-loader';
+import '../css/style_2.scss';
+import '../css/style.css';
+
+import { userList } from './userList.js';
+
 // var jsHint = require('jshint-loader'); 
-import * as jsHint from 'jshint-loader';
-require('../css/style_2.scss');
-require('../css/style.css');
+
+
+
 //some Comment
 const users = [{
         name: 'Oksana',
