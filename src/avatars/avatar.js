@@ -1,4 +1,6 @@
-module.exports = [
+/*jshint esversion: 6*/
+
+export let avatars = [
   './src/avatars/1.png',
   './src/avatars/2.png',
   './src/avatars/3.png',

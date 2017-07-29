@@ -1,8 +1,9 @@
 /*jshint esversion: 6*/
-var _ = require('lodash');
-var avatars = require('../avatars/avatar');
-
-function userList(users) {
+//var _ = require('lodash');
+import * as _ from 'lodash';
+// var avatars = require('../avatars/avatar');
+import {avatars} from '../avatars/avatar';
+export function userList(users) {
     const container = document.getElementById('root');
     const sortedUsers = _.sortBy(users, 'age');
     this.showList = () => {
@@ -17,4 +18,4 @@ function userList(users) {
     };
 }
 
-module.exports = userList;
+// module.exports = userList;
